@@ -30,7 +30,7 @@ char		*ft_strtrim(char const *s)
 	while (ft_trim(s[i]) == 1)
 	{
 		if (*s == '\0')
-			return (ft_strnew(1));
+			return (ft_strnew(0));
 		s++;
 	}
 	while (s[i] != '\0')
