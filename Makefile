@@ -6,7 +6,7 @@
 #    By: viforget <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/15 20:55:26 by viforget          #+#    #+#              #
-#    Updated: 2018/10/25 17:49:22 by viforget         ###   ########.fr        #
+#    Updated: 2018/12/06 17:17:15 by viforget         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,10 @@ SRC = ft_atoi.c\
 	ft_sqrt.c\
 	ft_swap.c\
 	ft_puttab.c\
+	ft_strjoindel.c\
+	ft_strnjoin.c\
+	ft_strnjoindel.c\
+	get_next_line.c\
 
 OBJ = ft_atoi.o\
 	ft_memcmp.o\
@@ -139,21 +143,25 @@ OBJ = ft_atoi.o\
 	ft_sqrt.o\
 	ft_swap.o\
 	ft_puttab.o\
+	ft_strjoindel.o\
+	ft_strnjoin.o\
+	ft_strnjoindel.o\
+	get_next_line.o\
 
 all : $(NAME)
 
 $(NAME) :
 	@gcc -Wall -Wextra -Werror -c $(SRC)
 	@ar rc $(NAME) $(OBJ)
-	#COMPILATION OK
+	@echo "\033[32mCOMPILATION OK\033[0m"
 
 clean :
 	@/bin/rm -f $(OBJ)
-	#CLEAN OK
+	@echo "\033[36mCLEAN OK\033[0m"
 
 fclean :
 	@/bin/rm -f $(OBJ) $(NAME)
-	#FCLEAN OK
+	@echo "\033[36mFCLEAN OK\033[0m"
 
 re : fclean all
 
