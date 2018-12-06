@@ -6,13 +6,13 @@
 /*   By: viforget <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 17:03:21 by viforget          #+#    #+#             */
-/*   Updated: 2018/12/06 17:04:55 by viforget         ###   ########.fr       */
+/*   Updated: 2018/12/06 19:09:35 by viforget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char*	ft_strnjoindel(char *s1, char const *s2, size_t n)
+char	*ft_strnjoindel(char *s1, char const *s2, size_t n)
 {
 	int		i;
 	int		i2;

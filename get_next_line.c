@@ -6,12 +6,11 @@
 /*   By: viforget <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 23:01:17 by viforget          #+#    #+#             */
-/*   Updated: 2018/12/06 17:09:42 by viforget         ###   ########.fr       */
+/*   Updated: 2018/12/06 19:09:56 by viforget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 static	char	*ft_strcut(char (*str)[BUFF_SIZE], int n)
 {
